@@ -20,37 +20,43 @@
     <section class="section1" id="section1">
       <!-- HEADER -->
       <header id="header" class="header">
-        <nav class="navigation_bar">
-          <!-- <span class="business_name" id="business_name"
+          <nav class="navigation_bar">
+            <!-- <span class="business_name" id="business_name"
           >IGNITE</span> -->
 
-          <span class="business_logo" id="business_logo"
-            ><img
-              class="logo"
-              id="logo"
-              src="../logo/download.png"
-              alt="logo of site"
-            />
-          </span>
+            <span class="business_logo" id="business_logo"
+              ><img
+                class="logo"
+                id="logo"
+                src="../logo/download.png"
+                alt="logo of site"
+              />
+            </span>
 
-          <span class="middle_div" id="middle_div">
-            <div class="div_items" id="div_items" style="display: flex">
-              <a href="#section2a" class="items_navbar" id="about">ABOUT</a>
-              <a href="#section2b" class="items_navbar" id="programs"
-                >PROGRAMS</a
-              >
-              <a href="#section2c" class="items_navbar" id="gallery">GALLERY</a>
-              <!-- <a href="#" class="items_navbar" id="pricing">PRICING</a>
+            <span class="middle_div" id="middle_div">
+              <div class="div_items" id="div_items" style="display: flex">
+                <a href="#section2a" class="items_navbar" id="about">ABOUT</a>
+                <a href="#section2b" class="items_navbar" id="programs"
+                  >PROGRAMS</a
+                >
+                <a href="#section2c" class="items_navbar" id="gallery"
+                  >GALLERY</a
+                >
+                <!-- <a href="#" class="items_navbar" id="pricing">PRICING</a>
               <a href="#" class="items_navbar" id="team">TEAM</a> -->
-              <a href="#section3" class="items_navbar" id="contact">CONTACT</a>
-            </div>
-          </span>
-
-          <button class="joinus_button_nav" id="joinus_button_nav">
-            Join Us
-          </button>
-        </nav>
-
+                <a href="#contact_us" class="items_navbar" id="contact"
+                  >CONTACT</a
+                >
+              </div>
+            </span>
+            <button id="light_dark" >L</button>
+            <button class="joinus_button_nav" id="joinus_button_nav">
+              Sign Up
+            </button>
+            
+          </nav>
+         
+      
         <div class="head_flex">
           <span class="pic_span" id="pic_span">
             <img
@@ -550,7 +556,7 @@
     </section>
     <!-- SECTION 2 ENDS HERE-->
 
-    <section class="contact_us">
+    <section class="contact_us" id="contact_us">
       <div class="inner_contact_div">
         <div class="personal_details">
           <div class="info_divs_contact">
@@ -603,29 +609,35 @@
             <div class="stay_in_touch">STAY IN TOUCH</div>
             <div class="input_contact">
               <div class="label_input_contact">
-                <label for="email" class="label_contact"
-                  >Enter Your Email:</label
-                >
-                <input type="email" id="email" class="input_boxes_contact" />
+                <input
+                  class="input_boxes_contact"
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
               </div>
               <div class="label_input_contact">
-                <label for="name" class="label_contact">
-                  Enter Your Name:</label
-                >
-                <input type="text" id="name" class="input_boxes_contact" />
+                <input
+                  class="input_boxes_contact"
+                  type="number"
+                  number="number"
+                  placeholder="Contact Number"
+                  required
+                />
               </div>
               <div class="label_input_contact">
-                <label for="number" class="label_contact"
-                  >Enter Your Number:</label
-                >
-                <input type="number" id="number" class="input_boxes_contact" />
+                <input
+                  class="input_boxes_contact"
+                  type="email"
+                  email="email"
+                  placeholder="Email Address"
+                  required
+                />
               </div>
-              
             </div>
             <div><button class="send_button">Send</button></div>
-            
           </form>
-          
         </div>
       </div>
     </section>
@@ -671,5 +683,9 @@
       </footer>
     </section>
     <!-- SECTION 3 ENDS HERE -->
+
+
+
+    <script src="../java_script/index.js"></script>
   </body>
 </html>

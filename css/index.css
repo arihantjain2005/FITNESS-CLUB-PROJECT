@@ -57,7 +57,7 @@
   padding: 0.5%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content:space-around;
   /* position: fixed;
   width: 100%;
   background-color: #222831; */
@@ -100,6 +100,15 @@
   /* margin-left: auto; */
   /* justify-content: flex-end; */
 }
+
+#light_dark{
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  font-size: 1vw;
+  background-color: #eeeeee;
+}
+
 
 .head_flex {
   display: flex;
@@ -503,15 +512,22 @@
   height: 3vw;
 }
 
-.label_contact {
-  font-size: 1.2vw;
-  font-family: yatra;
-}
-
 .input_boxes_contact {
   background-color: transparent;
-  width: 50%;
+  width: 100%;
+  height: 3vw;
+  color: #eeeeee;
+  font-size: 1vw;
+  border: none;
+  border-bottom:2px solid #eeeeee;
+
 }
+
+.input_boxes_contact::placeholder {
+  color: #eeeeee;
+  opacity: 1;     
+}
+
 
 .send_button {
   margin: 5%;
