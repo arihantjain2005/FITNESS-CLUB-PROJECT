@@ -163,7 +163,7 @@
 }
 
 .marquee-container {
-  width: 105%;
+  width: 100%;
   align-content: center;
   display: flex;
   animation: marquee1 30s linear infinite;
