@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/login_signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Create account</h2>
+            <form id="signupForm">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="email@gmail.com" required>
+                </div>
+                <div class="input-group">
+                    <label>Phone no</label>
+                    <input type="text" placeholder="Enter your phone no" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+                <button class="btn" type="submit">Create Account</button>
+            </form>
+            <p class="signup-link">Already have an account? <a href="login.html">Sign in</a></p>
+        </div>
+        <div class="image-container">
+            <img class="signup-image" src="../images/paralax_bg/parallax_img1.jpg" alt="Person using a laptop">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            const email = document.querySelector('input[type="email"]').value;
+            const phone = document.querySelector('input[type="text"]').value;
+            const password = document.querySelector('input[type="password"]').value;
+
+            if (email && phone && password) {
+                // Save user data in localStorage
+                const userData = {
+                    email: email,
+                    name: phone,
+                    password: password
+                };
+                localStorage.setItem('user', JSON.stringify(userData));
+
+                alert('Account created successfully!');
+                window.location.href = 'login.html'; // Redirect to login
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
+</html>
