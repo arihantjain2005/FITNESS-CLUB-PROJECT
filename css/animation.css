@@ -13,3 +13,6 @@
     transform: translateX(-100%);
   }
 }
+.marquee-container:hover {
+  animation-play-state: paused;
+}
