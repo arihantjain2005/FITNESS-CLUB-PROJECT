@@ -57,7 +57,7 @@
   padding: 0.5%;
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   /* position: fixed;
   width: 100%;
   background-color: #222831; */
@@ -92,24 +92,23 @@
   border: none;
   border-radius: 10vw;
   background-color: #da131d;
-  
+
   font-family: yatra;
   font-style: italic;
-  
+
   /* margin-right: 6vw; */
   /* margin-top: 20px; */
   /* margin-left: auto; */
   /* justify-content: flex-end; */
 }
 
-#light_dark{
+#light_dark {
   width: 3vw;
   height: 3vw;
   border-radius: 50%;
   font-size: 1vw;
   background-color: #eeeeee;
 }
-
 
 .head_flex {
   display: flex;
@@ -156,7 +155,7 @@
   font-family: clash;
   border-radius: 50px;
   border: 0.1vw solid #da131d;
-  cursor:grab;
+  cursor: grab;
 }
 
 .marquee {
@@ -522,15 +521,13 @@
   color: #eeeeee;
   font-size: 1vw;
   border: none;
-  border-bottom:2px solid #eeeeee;
-
+  border-bottom: 2px solid #eeeeee;
 }
 
 .input_boxes_contact::placeholder {
   color: #eeeeee;
-  opacity: 1;     
+  opacity: 1;
 }
-
 
 .send_button {
   margin: 5%;
